@@ -6,6 +6,7 @@
     background-color: blue;
     padding: 1rem;
     border-radius: 12px;
+    margin-top: 1rem;
 }
 .list {
     border-radius: 12px;
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 25%;
+    width: 50%;
     background-color: black;
     padding: .5rem;
     border-radius: 12px;

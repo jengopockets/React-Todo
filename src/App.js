@@ -1,15 +1,19 @@
 import React from 'react';
 import TodoList from './components/TodoComponents/TodoList';
 import TodoForm from './components/TodoComponents/TodoForm';
+import SimpleStorage from "react-simple-storage";
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: [
-      ],
+      todos: [],
       todo: ''
     };
+  }
+
+  updateInput(key, task) {
+    this.setState({ [key]: task});
   }
   addTodo = x => {
     x.preventDefault();
@@ -44,12 +48,15 @@ class App extends React.Component {
   render() {
     return (
       <div className={`full`}>
+        <SimpleStorage parent={this} />
         <TodoList handleToggleComplete={this.toggleTodoComplete} todos={this.state.todos} />
         <TodoForm value={this.state.todo} handleTodoChange={this.changeTodo} handleAddTodo={this.addTodo} handleClearTodos={this.clearCompletedTodos} />
       </div>
     );
   }
 }
+
+
 
 
 export default App;
