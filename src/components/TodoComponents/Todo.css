@@ -1,0 +1,25 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 1rem;
+}
+.list {
+    border-radius: 12px;
+    width: 75%;
+    text-align: center;
+    background-color: lightgray;
+}
+.full {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background-color: black;
+    padding: .5rem;
+    border-radius: 12px;
+}
